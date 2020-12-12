@@ -30,5 +30,5 @@
 - JSON (zad6_2)
 
 7. Zrównoleglanie obliczeń
-- Histogram
-- Pięciu filozofów
+- Histogram (zad7_1)
+- Pięciu filozofów (zad7_2)
