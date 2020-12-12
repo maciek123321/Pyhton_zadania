@@ -29,6 +29,6 @@
 - XML(DOM) (zad6_1)
 - JSON (zad6_2)
 
-7. Zrównoleglnie obliczeń
+7. Zrównoleglanie obliczeń
 - Histogram
 - Pięciu filozofów
