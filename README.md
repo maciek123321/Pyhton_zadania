@@ -24,3 +24,11 @@
 5. Klasy
 - Liczby zespolone (zad5_1)
 - Kalkulator (zad5_2)
+
+6. Praca z danymi
+- XML(DOM) (zad6_1)
+- JSON (zad6_2)
+
+7. Zrównoleglnie obliczeń
+- Histogram
+- Pięciu filozofów
