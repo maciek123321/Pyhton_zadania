@@ -1,4 +1,3 @@
-import os
 from PIL import Image, ImageDraw
 
 img1 = Image.new('RGB', (60, 30), color='red')

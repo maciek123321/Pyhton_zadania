@@ -7,7 +7,8 @@ def Scalar_mul(x, y):
     else:
         return "error"
 
-x = [2, 9, 2, 999]
-y = [4, 7, 5, 1]
 
-print(Scalar_mul(x, y))
+if __name__ == '__main__':
+    x = [2, 9, 2, 999]
+    y = [4, 7, 5, 1]
+    print(Scalar_mul(x, y))

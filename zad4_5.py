@@ -13,9 +13,11 @@ def mul_matrix(x, y):
 
     return z
 
-x = np.random.rand(8, 8)
-y = np.random.rand(8, 8)
-z = mul_matrix(x, y)
-print(z)
+
+if __name__ == '__main__':
+    x = np.random.rand(8, 8)
+    y = np.random.rand(8, 8)
+    z = mul_matrix(x, y)
+    print(z)
 
 

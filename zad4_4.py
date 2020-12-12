@@ -12,8 +12,9 @@ def add_matrix(x,y):
                 z[i].append(x[i][j]+y[i][j])
         return z
 
-x = np.random.rand(128, 128)
-y = np.random.rand(128, 128)
-z = add_matrix(x, y)
 
-print(z)
+if __name__ == '__main__':
+    x = np.random.rand(128, 128)
+    y = np.random.rand(128, 128)
+    z = add_matrix(x, y)
+    print(z)

@@ -9,9 +9,10 @@ def quadratic(a,b,c):
     else:
         return "No real roots"
 
-a = int(input("Insert a: "))
-b = int(input("Insert b: "))
-c = int(input("Insert c: "))
-print(quadratic(a, b, c))
+if __name__ == '__main__':
+    a = int(input("Insert a: "))
+    b = int(input("Insert b: "))
+    c = int(input("Insert c: "))
+    print(quadratic(a, b, c))
 
 

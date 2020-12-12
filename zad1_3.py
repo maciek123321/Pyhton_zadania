@@ -2,3 +2,4 @@ name, surname, date = input("Insert your name, surname and date of birth ").spli
 print("Name: ", name)
 print("Surname: ", surname)
 print("Birthday: ", date)
+

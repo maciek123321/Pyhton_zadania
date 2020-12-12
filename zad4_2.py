@@ -1,6 +1,4 @@
 from numpy import random
-n = 50
-x = random.randint(100, size=(n))
 
 def Bubble_sort(y):
     for i in range(n-1):
@@ -16,6 +14,10 @@ def Verify(x,y):
         else:
             return False
 
-a = sorted(x, reverse=True)
-b = Bubble_sort(x)
-print(Verify(a,b))
+
+if __name__ == '__main__':
+    n = 50
+    x = random.randint(100, size=(n))
+    a = sorted(x, reverse=True)
+    b = Bubble_sort(x)
+    print(Verify(a,b))

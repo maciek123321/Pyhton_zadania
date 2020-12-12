@@ -1,7 +1,5 @@
 import sys
 import numpy as np
-if sys.version_info >= (3,):
-    xrange = range
 
 def det(M):
     M = [ list(row) for row in M ]
@@ -27,7 +25,9 @@ def det(M):
         res *= M[0][0]
     return res
 
-
-x = np.random.rand(2, 2)
-print(x)
-print(det(x))
+if __name__ == '__main__':
+    if sys.version_info >= (3,):
+       xrange = range
+    x = np.random.rand(2, 2)
+    print(x)
+    print(det(x))
