@@ -126,8 +126,8 @@ def check(weights1_after_learning, weights2_after_learning, test_data, n):
     return (count/n)*100
 
 if __name__ == '__main__':
-    train_path = '/Users/maciejnawrocki/Desktop/python/project/data_train/'
-    test_path = '/Users/maciejnawrocki/Desktop/python/project/data_test/'
+    train_path = '/data_train/'
+    test_path = '/data_test/'
 
     train_data = write_wav_into_list_test_or_train(train_path)
     test_data = write_wav_into_list_test_or_train(test_path)
