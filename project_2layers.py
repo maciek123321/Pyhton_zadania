@@ -63,11 +63,6 @@ def write_wav_into_list_test_or_train(test_path):
         x_test = [x0test, x1test, x2test, x3test, x4test, x5test, x6test, x7test, x8test, x9test]
     return x_test
 
-#print("Cały test: ", X_test)
-#print("Tylko 0: ", X_test[0])
-#print("Tylko pierwsze 0: ", X_test[0][0] )
-#print("Pierwszy element pierwszego zera: ", X_test[0][0][0])
-
 
 def init_weights(number_of_inputs1, number_of_neurons1, number_of_inputs2, number_of_neurons2): #8000, 100, 100, 10
     weights1 = 0.2*np.random.rand(number_of_inputs1, number_of_neurons1)-0.1
