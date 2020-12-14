@@ -63,11 +63,6 @@ def write_wav_into_list_test_or_train(path):
         x_test = [x0test, x1test, x2test, x3test, x4test, x5test, x6test, x7test, x8test, x9test]
     return x_test
 
-#print("Cały test: ", X_test)
-#print("Tylko 0: ", X_test[0])
-#print("Tylko pierwsze 0: ", X_test[0][0] )
-#print("Pierwszy element pierwszego zera: ", X_test[0][0][0])
-
 
 def init_weights(number_of_inputs, number_of_neurons):
     weights = 0.2*np.random.rand(number_of_inputs, number_of_neurons)-0.1
@@ -117,8 +112,9 @@ def check(weights_after_learning, test_data, n):
 
 
 if __name__ == '__main__':
-    train_path = '/Users/maciejnawrocki/Desktop/python/project/data_train/'
-    test_path = '/Users/maciejnawrocki/Desktop/python/project/data_test/'
+    
+    train_path = '/data_train/'
+    test_path = '/data_test/'
 
     train_data = write_wav_into_list_test_or_train(train_path)
     test_data = write_wav_into_list_test_or_train(test_path)
