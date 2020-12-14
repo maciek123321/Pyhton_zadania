@@ -36,3 +36,4 @@
 8. Rozpoznawanie wypowiadanych cyfr za pomocą sieci neuronowej (projekt)
 - project_2layers
 - project_1layer
+- project_description
