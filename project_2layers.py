@@ -4,69 +4,7 @@ import numpy as np
 from numpy import random
 
 
-def write_wav_into_list_train(train_path):
-
-    x0 = []
-    x1 = []
-    x2 = []
-    x3 = []
-    x4 = []
-    x5 = []
-    x6 = []
-    x7 = []
-    x8 = []
-    x9 = []
-    x_train = []
-#                wav0_1                      wav0_2       ...
-# x0 = [ [0.1,0.2,-0.1,...,0.9], [0.2,-0.2,-0.1,...,0.7], ...]
-
-    for filename in os.listdir(train_path):
-        x, s = librosa.load(train_path+filename, sr=8000)
-
-        if len(x) > 8000:
-            raise ValueError("data length cannot exceed padding length.")
-        elif len(x) < 8000:
-            option = "padding_left_right"
-            #option = "padding_only_right"
-            if option == "padding_left_right":
-                data = np.zeros(8000)
-                offset = np.random.randint(low=0, high=8000 - len(x))
-                data[offset:offset + len(x)] = x
-                x = data
-            else:
-                data_size = len(x)
-                x = np.pad(x, (0, 8000 - data_size), 'constant')
-        elif len(x) == 8000:
-            # nothing to do here
-            x = x
-
-        #x = ((x - np.min(x)) / np.ptp(x))/10   # 0.0-0.1 normalization
-
-        if filename[0] == "0":
-            x0.append(x)
-        elif filename[0] == "1":
-            x1.append(x)
-        elif filename[0] == "2":
-            x2.append(x)
-        elif filename[0] == "3":
-            x3.append(x)
-        elif filename[0] == "4":
-            x4.append(x)
-        elif filename[0] == "5":
-            x5.append(x)
-        elif filename[0] == "6":
-            x6.append(x)
-        elif filename[0] == "7":
-            x7.append(x)
-        elif filename[0] == "8":
-            x8.append(x)
-        else:
-            x9.append(x)
-        x_train = [x0, x1, x2, x3, x4, x5, x6, x7, x8, x9]
-    return x_train
-
-
-def write_wav_into_list_test(test_path):
+def write_wav_into_list_test_or_train(test_path):
 
     x0test = []
     x1test = []
@@ -191,8 +129,8 @@ if __name__ == '__main__':
     train_path = '/Users/maciejnawrocki/Desktop/python/project/data_train/'
     test_path = '/Users/maciejnawrocki/Desktop/python/project/data_test/'
 
-    train_data = write_wav_into_list_train(train_path)
-    #test_data = write_wav_into_list_test(test_path)
+    train_data = write_wav_into_list_test_or_train(train_path)
+    test_data = write_wav_into_list_test_or_train(test_path)
 
     weights_before1, weights_before2 = init_weights(8000, 80, 80, 10)
 
@@ -200,5 +138,3 @@ if __name__ == '__main__':
 
     efficiency = check(weights1_after_learning, weights2_after_learning, train_data, 1000)
     print("Efficiency after learning: ", efficiency)
-
-
