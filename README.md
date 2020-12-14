@@ -1,4 +1,4 @@
-# Pyhton zadania
+# Pyhton zadania + projekt
 1. Wejście/wyjście
 - Hello World (zad1_1, zad1_2)
 - Wprowadzanie danych (zad1_3)
