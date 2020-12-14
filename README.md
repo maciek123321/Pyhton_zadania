@@ -32,3 +32,7 @@
 7. Zrównoleglanie obliczeń
 - Histogram (zad7_1)
 - Pięciu filozofów (zad7_2)
+
+8. Projekt: rozpoznawanie wypowiadanych cyfr za pomocą sieci neuronowej
+- project_2layers
+- project_1layer
