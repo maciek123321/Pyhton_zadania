@@ -33,6 +33,6 @@
 - Histogram (zad7_1)
 - Pięciu filozofów (zad7_2)
 
-8. Projekt: rozpoznawanie wypowiadanych cyfr za pomocą sieci neuronowej
+8. Rozpoznawanie wypowiadanych cyfr za pomocą sieci neuronowej (projekt)
 - project_2layers
 - project_1layer
